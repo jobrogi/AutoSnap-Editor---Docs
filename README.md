@@ -1,60 +1,123 @@
 # 📐 AutoSnap – Editor Plugin
 
-**AutoSnap – Editor** is a lightweight plugin for Unreal Engine that brings hotkey-based snapping controls to your level design workflow. Easily align actors using a dynamic grid while dragging them in the editor viewport — no need to touch native snapping settings.
-
-Built for speed, flexibility, and modular asset placement.
+**AutoSnap – Editor** is a lightweight Unreal Engine 5 plugin that enhances your level design workflow with hotkey-based snapping controls. It allows precise modular asset placement while dragging actors in the editor — without touching Unreal’s built-in grid snapping.
 
 ---
 
 ## ✨ Features
 
-- 🔧 Snap while dragging actors (no need to toggle UE's grid)
-- ⌨️ Hotkey-based axis control (X/Y/Z snapping)
-- 🎯 Realtime grid adjustment with mouse wheel
-- 👀 Visual feedback with custom log messages (or grid overlay if enabled)
-- 🧠 Axis lock toggles for fine control
-- 🧩 Modular and C++-friendly design
+- 🔧 Snap actors automatically.
+- ⌨️ Hotkey toggles for X, Y, Z axis snapping
+- 🌀 Snap distance control via Shift + Mouse Wheel
+- 🧱 Optional grid overlay (visual feedback)
+- 🧠 Toggle debug logs for tracking snap state
+- 🧩 Minimal, efficient C++/Blueprint-friendly setup
 
 ---
 
 ## 🔧 Installation
 
-1. Drop the plugin folder into your project:
+If you installed this from the **Fab Marketplace**, Unreal will automatically place the plugin into your project's `Plugins` folder.
 
+### 1. Enable the Plugin
+Go to:
+> You can also toggle it from the main menu:  
+![image 41](https://github.com/user-attachments/assets/418c5026-e1cb-4cb8-a8c2-6d417edc3863)
+![image 44](https://github.com/user-attachments/assets/b1fb13b6-4808-477b-b5d6-84f99216917a)
 
-2. Regenerate Visual Studio project files
-3. Launch Unreal → Enable **AutoSnap – Editor** under *Edit > Plugins*
-4. Restart the editor
-
----
-
-## 🎮 Editor Hotkeys
-
-| Action                     | Hotkey            |
-|---------------------------|-------------------|
-| Enable snap on drag       | Hold `Shift` while dragging |
-| Toggle snapping globally  | `Shift + G`       |
-| Increase snap size        | `Ctrl + Mouse Wheel Up` |
-| Decrease snap size        | `Ctrl + Mouse Wheel Down` |
-| Toggle X snapping         | `Alt + X`         |
-| Toggle Y snapping         | `Alt + Y`         |
-| Toggle Z snapping         | `Alt + Z`         |
+### 2. Restart the Editor
+You must restart the Unreal Editor for the plugin to activate.
 
 ---
 
 ## 🧠 How It Works
 
-- The plugin hooks into actor dragging in the editor
-- When the snap hotkey is held (`Shift`), selected actors will snap to a virtual grid while moving
-- Snap resolution is adjustable in real-time using the scroll wheel
-- You can toggle individual axis constraints (X/Y/Z) for precision
-
-This allows modular asset placement (e.g., walls, props, platforms) with precision **without** relying on Unreal’s built-in snapping.
+- Enable AutoSnap via  `Shift + G` and Disable Unreal Engine's Legacy Snapping Logic in editor.
+- The plugin does **not** override or depend on native UE snapping.
+- It uses your defined snap size and axis settings.
+- Snap size can be dynamically increased or decreased.
+- You can enable/disable snapping on individual axes (X, Y, Z).
+- A visual grid or log feedback system is available.
 
 ---
 
-## 🛠 UE Version Support
+## 🎮 Editor Hotkeys
+
+| Action                     | Hotkey             |
+|---------------------------|--------------------|
+| Toggle snapping globally   | `Shift + G`        |
+| Increase snap size         | `Shift + Mouse Wheel Up`   |
+| Decrease snap size         | `Shift + Mouse Wheel Down` |
+| Toggle X axis snapping     | `Shift + X`        |
+| Toggle Y axis snapping     | `Shift + Y`        |
+| Toggle Z axis snapping     | `Shift + Z`        |
+| Toggle debug logs          | `Shift + D`        |
+
+---
+
+## 🧰 Configuration Panel
+
+After enabling the plugin, go to:
+![image 41 (1)](https://github.com/user-attachments/assets/5abba365-036b-4e85-8283-502a535633f8)
+
+In the settings panel, you can configure:
+
+- Snap Distance & Step Size
+- Axis toggles
+- Debug log options
+- Grid visibility
+- Hotkey bindings
+
+![Settings Panel](./images/autosnap_settings_panel.png)
+
+> ⚠️ Note: All hotkeys are combined with `Shift` (e.g., `Shift + X`, `Shift + D`, etc.)
+
+---
+
+## ⚠️ Disable Native UE Grid Snapping
+
+When using **AutoSnap**, you should disable Unreal Engine’s **built-in grid snapping** to avoid conflicts.
+
+AutoSnap provides its own snapping system, and leaving this toggle on may lead to inconsistent movement or double-snapping behavior.
+
+To disable native snapping:
+
+1. Locate the **Snapping Toolbar** in the top editor bar.
+2. **Uncheck the grid snapping icon** (see below):
+
+![image 45](https://github.com/user-attachments/assets/3eceb9bb-f389-4583-939c-6e353be4a620)
+
+> Tooltip: *"Enables or disables snapping to the grid when dragging objects around"*
+
+---
+
+
+
+## ✅ UE Version Support
 
 | Engine Version | Status    |
 |----------------|-----------|
 | 5.3.x          | ✅ Tested |
+| 5.4.x          | ✅ Tested |
+| 5.5.x          | ✅ Tested |
+| 5.6+           | ⚠️ Not officially tested |
+
+---
+
+## 📫 Support
+
+Need help or want to request a feature? We've got you covered:
+
+- 💬 **Join the Community on Discord**  
+  [discord.gg/YvME6jG8](https://discord.gg/YvME6jG8)
+
+- 🛍️ **View the Plugin on Fab Marketplace**  
+  [AutoSnap – Editor on Fab](https://www.fab.com/portal/listings/c538576e-e879-4101-9b1e-6d660183b63b/edit)
+
+- 📧 **Email Support**  
+  [jobrogi@gmail.com](mailto:jobrogi@gmail.com)
+
+---
+
+We’re always open to feedback and improving the plugin based on community input!
+
