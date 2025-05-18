@@ -58,6 +58,8 @@ You must restart the Unreal Editor for the plugin to activate.
 ## 🧰 Configuration Panel
 
 After enabling the plugin, go to:
+
+
 ![image 42](https://github.com/user-attachments/assets/8c747712-5592-439e-8457-ed2844415049)
 
 In the settings panel, you can configure:
