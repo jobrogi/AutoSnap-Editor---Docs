@@ -70,7 +70,7 @@ In the settings panel, you can configure:
 - Grid visibility
 - Hotkey bindings
 
-![Settings Panel](./images/autosnap_settings_panel.png)
+![image 40 (1)](https://github.com/user-attachments/assets/8915497c-9b0a-419a-8931-42f9a4be64b2)
 
 > ⚠️ Note: All hotkeys are combined with `Shift` (e.g., `Shift + X`, `Shift + D`, etc.)
 
