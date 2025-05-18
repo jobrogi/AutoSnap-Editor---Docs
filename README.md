@@ -58,7 +58,7 @@ You must restart the Unreal Editor for the plugin to activate.
 ## 🧰 Configuration Panel
 
 After enabling the plugin, go to:
-![image 41 (1)](https://github.com/user-attachments/assets/5abba365-036b-4e85-8283-502a535633f8)
+![image 42](https://github.com/user-attachments/assets/8c747712-5592-439e-8457-ed2844415049)
 
 In the settings panel, you can configure:
 
@@ -86,8 +86,6 @@ To disable native snapping:
 2. **Uncheck the grid snapping icon** (see below):
 
 ![image 45](https://github.com/user-attachments/assets/3eceb9bb-f389-4583-939c-6e353be4a620)
-
-> Tooltip: *"Enables or disables snapping to the grid when dragging objects around"*
 
 ---
 
